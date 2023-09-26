@@ -1,10 +1,16 @@
-export const Card = () => {
+interface CardProps {
+   id: number;
+   name: string;
+   email: string;
+}
+
+export const Card = ({ id, name, email }: CardProps) => {
    return (
       <div>
-         <img src='' alt='robots' />
+         <img src={`https://robohash.org/${id}?200x200`} alt='robots' />
          <div>
-            <h2>Jane Doe</h2>
-            <p>jane.doe@gmail.com</p>
+            <h2>{name}</h2>
+            <p>{email}</p>
          </div>
       </div>
    );
