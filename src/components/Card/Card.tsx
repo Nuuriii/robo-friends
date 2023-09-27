@@ -12,6 +12,7 @@ export const Card = ({ id, name, email }: CardProps) => {
       height={'22rem'}
       flexDirection={'column'}
       backgroundColor={'indigo'}
+      border={'1px solid #fff'}
       borderRadius={'0.7rem'}
       alignItems={'center'}
       justifyContent={'space-around'}
