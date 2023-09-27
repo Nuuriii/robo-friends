@@ -11,12 +11,13 @@ export const Card = ({ id, name, email }: CardProps) => {
     <Flex
       height={'22rem'}
       flexDirection={'column'}
-      bg={'skyblue'}
+      backgroundColor={'indigo'}
       borderRadius={'0.7rem'}
       alignItems={'center'}
       justifyContent={'space-around'}
+      color={'white'}
       _hover={{
-        transform: 'scale(1.050)',
+        transform: 'scale(1.030)',
       }}
     >
       <Image

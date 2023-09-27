@@ -18,6 +18,7 @@ export const App = () => {
   return (
     <Flex
       p={'3rem 0'}
+      backgroundColor={'#15012D'}
       fontFamily={'mono'}
       flexDirection={'column'}
       alignItems={'center'}
