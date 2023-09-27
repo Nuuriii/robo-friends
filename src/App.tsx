@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { SearchBox } from './components/searchBox/SearchBox';
 import { CardList } from './components/CardList/CardList';
 import { Robots } from './components/CardList/robots';
-import { Flex } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 
 export const App = () => {
   const [searchField, setSearchField] = useState<string>('');
@@ -24,7 +24,9 @@ export const App = () => {
       alignItems={'center'}
       justifyContent={'center'}
     >
-      <h1>Robo Friends</h1>
+      <Heading as={'h2'} color={'#fff'}>
+        Robo Friends
+      </Heading>
       <SearchBox onSearchValue={handleSearchChange} />
       <CardList robots={filteredRobots} />
     </Flex>
