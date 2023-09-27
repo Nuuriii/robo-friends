@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { SearchBox } from './components/searchBox/SearchBox';
 import { CardList } from './components/CardList/CardList';
 import { Robots } from './components/CardList/robots';
+import { Flex } from '@chakra-ui/react';
 
 export const App = () => {
   const [searchField, setSearchField] = useState<string>('');
@@ -15,10 +16,10 @@ export const App = () => {
   };
 
   return (
-    <div>
+    <Flex flexDirection={'column'} alignItems={'center'}>
       <h1>Robo Friends</h1>
       <SearchBox onSearchValue={handleSearchChange} />
       <CardList robots={filteredRobots} />
-    </div>
+    </Flex>
   );
 };
