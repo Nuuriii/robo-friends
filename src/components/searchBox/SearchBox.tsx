@@ -21,10 +21,9 @@ export const SearchBox = ({ onSearchValue }: searchValue) => {
         fontFamily={'mono'}
         fontSize={'1rem'}
         border={'none'}
-        outline={'2px solid black'}
         borderRadius={'0.3rem'}
         _focus={{
-          outline: '3px solid black',
+          outline: 'none',
         }}
         type='text'
         value={value}
