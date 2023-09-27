@@ -17,6 +17,7 @@ export const Card = ({ id, name, email }: CardProps) => {
       alignItems={'center'}
       justifyContent={'space-around'}
       color={'white'}
+      transition={'all 0.2s'}
       _hover={{
         transform: 'scale(1.030)',
       }}
