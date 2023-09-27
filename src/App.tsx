@@ -18,6 +18,7 @@ export const App = () => {
   return (
     <Flex
       p={'3rem 0'}
+      fontFamily={'mono'}
       flexDirection={'column'}
       alignItems={'center'}
       justifyContent={'center'}

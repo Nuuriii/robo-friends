@@ -18,6 +18,7 @@ export const SearchBox = ({ onSearchValue }: searchValue) => {
     <Box m={'3rem 0rem'}>
       <Input
         p={'1rem'}
+        fontFamily={'mono'}
         fontSize={'1rem'}
         border={'none'}
         outline={'2px solid black'}
