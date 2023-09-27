@@ -17,6 +17,7 @@ export const App = () => {
 
   return (
     <Flex
+      p={'3rem 0'}
       flexDirection={'column'}
       alignItems={'center'}
       justifyContent={'center'}

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Box } from '@chakra-ui/react';
 
 interface searchValue {
   onSearchValue: (search: string) => void;
@@ -14,13 +15,13 @@ export const SearchBox = ({ onSearchValue }: searchValue) => {
   };
 
   return (
-    <div>
+    <Box m={'3rem 0rem'}>
       <input
         type='text'
         value={value}
         onChange={HandleChange}
         placeholder='search robots'
       />
-    </div>
+    </Box>
   );
 };
