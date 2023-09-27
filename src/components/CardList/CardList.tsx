@@ -1,11 +1,21 @@
 import { Card } from '../Card/Card';
-import { Robots } from './robots';
 
-export const CardList = () => {
+interface Robot {
+  id: number;
+  name: string;
+  email: string;
+  username: string;
+}
+
+interface CardListProps {
+  robots: Robot[];
+}
+
+export const CardList = ({ robots }: CardListProps) => {
   return (
     <>
-      {Robots.map((user, i) => (
-        <Card key={i} id={user.id} name={user.name} email={user.email} />
+      {robots.map((user) => (
+        <Card key={user.id} id={user.id} name={user.name} email={user.email} />
       ))}
     </>
   );
