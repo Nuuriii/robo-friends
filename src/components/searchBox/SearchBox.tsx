@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box } from '@chakra-ui/react';
+import { Box, Input } from '@chakra-ui/react';
 
 interface searchValue {
   onSearchValue: (search: string) => void;
@@ -16,7 +16,15 @@ export const SearchBox = ({ onSearchValue }: searchValue) => {
 
   return (
     <Box m={'3rem 0rem'}>
-      <input
+      <Input
+        p={'1rem'}
+        fontSize={'1rem'}
+        border={'none'}
+        outline={'2px solid black'}
+        borderRadius={'0.3rem'}
+        _focus={{
+          outline: '3px solid black',
+        }}
         type='text'
         value={value}
         onChange={HandleChange}
