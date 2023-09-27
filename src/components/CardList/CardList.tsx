@@ -16,9 +16,7 @@ export const CardList = ({ robots }: CardListProps) => {
   return (
     <Grid
       width={'80%'}
-      backgroundColor={'green.800'}
       templateColumns={'repeat(auto-fit, minmax(255px, 1fr))'}
-      templateRows={'repeat(6, 400px)'}
       gap={15}
     >
       {robots.map((user) => (

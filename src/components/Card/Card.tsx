@@ -9,6 +9,7 @@ interface CardProps {
 export const Card = ({ id, name, email }: CardProps) => {
   return (
     <Flex
+      height={'22rem'}
       flexDirection={'column'}
       bg={'skyblue'}
       borderRadius={'0.7rem'}

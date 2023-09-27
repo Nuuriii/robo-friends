@@ -16,7 +16,11 @@ export const App = () => {
   };
 
   return (
-    <Flex flexDirection={'column'} alignItems={'center'}>
+    <Flex
+      flexDirection={'column'}
+      alignItems={'center'}
+      justifyContent={'center'}
+    >
       <h1>Robo Friends</h1>
       <SearchBox onSearchValue={handleSearchChange} />
       <CardList robots={filteredRobots} />
